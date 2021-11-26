@@ -1,0 +1,29 @@
+/* page header styles */
+@import url("responsiveheader.css");
+/* page layout styles */
+@import url("homelayout.css");
+/* page contents styles */
+@import url("homecontent.css");
+/* page footer styles */
+@import url("homefooter.css");
+
+/*mobile view*/
+@media only screen and (max-width: 750px) {
+    .container{ 
+        display: grid;
+        margin: 150px auto;
+        width: 90%;
+        gap: 15px;
+        /* border: 1px solid red; */
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+    
+    }
+}
+
+/*tablet view*/
+@media only screen and (min-width: 751px) and (max-width: 1200px) {
+    .container{
+        width: 90%;
+    }
+}
